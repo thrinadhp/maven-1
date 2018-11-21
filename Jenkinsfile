@@ -1,27 +1,31 @@
-node('master') 
-{
-     
-    stage('ContinuousDownload') 
-    {
-       git 'https://github.com/selenium-saikrishna/maven.git'
-    }
-    stage('ContinuousBuild')
-    {
-        sh 'mvn package'
-    }
-    stage('ContinuousDeployment')
-    {
-        sh 'scp /home/vagrant/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war vagrant@10.0.0.5:/var/lib/tomcat7/webapps/qaenv.war'
-    }
-    stage('ContinuousTesting')
-    {
-        git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
+pipeline
+ {
+ agent any
+ stages
+   {
+     stage('continuousdownload')
+      {
+        steps
+	{
+	 git 'https://github.com/sivachanikyamiriyala/maven.git'
 
-    }
-    stage('ContinuousDelivery')
-    {
-        input message: 'Waiting for approval from the DM',submitter: 'Ravi'
-        sh 'scp /home/vagrant/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war vagrant@10.0.0.6:/var/lib/tomcat7/webapps/prodenv.war'
-    }
-}
+	}
+       }
+      stage('continuousbuild')
+      {
+      steps
+      {
+      sh 'mvn package'
+      }
+      }
+      stage('continuousdeployment')
+      {
+      steps
+      {
+         sh 'scp /home/ubuntu/.jenkins/workspace/declarativepipeline/webapp/target/webapp.war ubuntu@172.31.36.239:/var/lib/tomcat8/webapps/icici.war'
 
+      }
+      }
+   }
+
+ }
