@@ -1,31 +1,15 @@
-pipeline
- {
- agent any
- stages
-   {
-     stage('continuousdownload')
-      {
-        steps
-	{
-	 git 'https://github.com/sivachanikyamiriyala/maven.git'
-
-	}
-       }
-      stage('continuousbuild')
-      {
-      steps
-      {
-      sh 'mvn package'
-      }
-      }
-      stage('continuousdeployment')
-      {
-      steps
-      {
-         sh 'scp /home/ubuntu/.jenkins/workspace/declarativepipeline/webapp/target/webapp.war ubuntu@172.31.36.239:/var/lib/tomcat8/webapps/icici.war'
-
-      }
-      }
-   }
-
- }
+node('master')
+{
+ stage('continuous download-master-branch')
+  {
+   git 'https://github.com/sivachanikyamiriyala/maven.git'
+  }
+ stage('continuousbuild-master-branch')
+  {
+   sh 'mvn package'
+  }
+ stage('continuousdeployment-master-branch')
+  {
+     sh 'scp /home/ubuntu/.jenkins/workspace/multibranch/webapp/target/webapp.war ubuntu@172.31.94.106:/var/lib/tomcat7/webapps/master.war'
+  } 
+}
