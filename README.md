@@ -7,5 +7,6 @@ asj
 <<<<<<< HEAD
 bch k
 =======
-cwdq
->>>>>>> test
+cwd
+sdchbq.wkc .kj .
+>
