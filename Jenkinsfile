@@ -1,11 +1,8 @@
 node('master')
 {    
-    stage('continuousdownload')
+    stage('continuousdownload-master')
     {
         git 'https://github.com/sivachanikyamiriyala/maven.git'
     }
-    stage('continuousBuild')
-    {
-        sh 'mvn package'
-    }
-}
+
+}    
