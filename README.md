@@ -1,7 +1,5 @@
 ihaj 
-vefg er
-fqcgavlqj
-egvt4w
+vefg eregvt4w
 gchg
 pavan 
 krishna
