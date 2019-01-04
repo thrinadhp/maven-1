@@ -1,5 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAcw dlcD
 rwgvrelah vc,HS2
+=======
+nwncvwocvnwoc<<<<<<< HEAD
+rwgvre2
+>>>>>>> 2807ac19878e8190d360a0fdda4b70ee32500eed
 fqewff13ihaj 
 vefg er
 fqcgavlqj
