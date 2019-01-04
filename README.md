@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+nwncvwocvnwoc<<<<<<< HEAD
 rwgvre2
 fqewff13ihaj 
 vefg er
