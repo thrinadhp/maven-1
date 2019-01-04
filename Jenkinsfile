@@ -15,7 +15,7 @@ node('master')
  stage('continuous testing')
  {
  git 'https://github.com/sivachanikyamiriyala/FunctionalTesting.git'
- java -jar testing.jar
+ sh 'java -jar testing.jar'
  }
  stage('continuous delivery')
  {
