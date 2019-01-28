@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ . kckdf<<<<<<< HEAD
 <<<<<<< HEAcw dlcD
 rwgvrelah vc,HS2
 =======
