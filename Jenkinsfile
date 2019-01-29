@@ -8,5 +8,4 @@ node('master')
   {
   sh 'mvn package'
   }
-  
-}
+}  
