@@ -14,7 +14,7 @@ node('master')
   }
   stage('continuous testing')
   {
-  git 'https://github.com/sivachanikyamiriyala/maven.git'
+  git 'https://github.com/sivachanikyamiriyala/FunctionalTesting.git'
   sh 'java -jar testing.jar'
   }
   stage('continuous delivery')
