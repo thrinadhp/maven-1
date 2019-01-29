@@ -1,4 +1,8 @@
+de<<<<<< HEAD
 ckwhclhwdql<<<<<<< HEAD
+=======
+ . kckdf<<<<<<< HEAD
+>>>>>>> 055302b312d6058836d9600c9e22c7e2683ce91c
 <<<<<<< HEAcw dlcD
 rwgvrelah vc,HS2
 =======
