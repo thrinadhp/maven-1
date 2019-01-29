@@ -4,7 +4,7 @@ node('master')
  {
   git 'https://github.com/sivachanikyamiriyala/maven.git'
  }
- stage("continuous build')
+ stage('continuous build')
  {
  sh 'mvn package'
  }
